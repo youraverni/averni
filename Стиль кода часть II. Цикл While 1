@@ -1,0 +1,16 @@
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+print("Количество элементов в списке:", len(my_list))
+x = len(my_list)
+while True:
+    for i in my_list:
+        if i >= 0:
+            print(i)
+            if i == my_list[x-1]:
+                break
+            else:
+                continue
+
+        else:
+            print("Замечено отрицательное число")
+            continue
+    break
